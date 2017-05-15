@@ -28,11 +28,11 @@ $todayListArray = explode('<li>', $todayList[1]);
     <meta charset="utf-8">
     <title>Today in History</title>
   </head>
-  <body>
+  <body onload="startTime()">
     <main>
       <header>
         <h1>Today in History</h1>
-        <h2><?php echo $date ?></h2>
+        <h2><?php echo strip_tags($endTodayDate[0]) ?></h2>
       </header>
 
       <section>
@@ -41,29 +41,35 @@ $todayListArray = explode('<li>', $todayList[1]);
         <p><?php
         switch ($r) {
           case 1:
-            echo $todayListArray[1];
+            echo strip_tags($todayListArray[1]);
             break;
           case 2:
-            echo $todayListArray[2];
+            echo strip_tags($todayListArray[2]);
             break;
           case 3:
-            echo $todayListArray[3];
+            echo strip_tags($todayListArray[3]);
             break;
           case 4:
-            echo $todayListArray[4];
+            echo strip_tags($todayListArray[4]);
             break;
           case 5:
-            $todayLast = explode('<p><b><a href',$todayListArray[5]);
-            echo $todayLast[0];
+            $todayLast = explode('<p><b><a href', $todayListArray[5]);
+            echo strip_tags($todayLast[0]);
             break;
           default:
             echo 'Code Broke Needs to be fixed!';
             break;
         }
       ?><p>
+        <div class="time">
+
+        </div>
+        <h3>Find out more Info <a href="https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today" target="_blank">HERE</a> about the events that happened</h3>
       </section>
 
       <footer>
+
+        Created by Collin OConnell
 
       </footer>
     </main>
