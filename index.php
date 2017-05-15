@@ -43,8 +43,8 @@ $todayListArray = explode('<li>', $todayList[1]);
         <h5><?php
 
         switch ($r) {
-          case $r:
-            echo strip_tags($todayListArray[$r]);
+          case 1:
+            echo strip_tags($todayListArray[1]);
             break;
           case 2:
             echo strip_tags($todayListArray[2]);
@@ -66,7 +66,6 @@ $todayListArray = explode('<li>', $todayList[1]);
       ?>
     </h5>
     <time></time>
-        <!-- <h3>Find out more Info <a href="https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today" target="_blank">HERE</a> about the events that happened</h3> -->
       </section>
       </main>
       <footer>
