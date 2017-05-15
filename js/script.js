@@ -60,17 +60,17 @@ $(document).ready(function() {
       if (m <= 9) {
         m = "0" + m;
       }
-      $time.html(h + " : " + m + " am");
+      $time.html(h + " : " + m + " am.");
     } else if (h > 12) {
       if (m <= 9) {
         m = "0" + m;
       }
-      $time.html((h - 12) + " : " + m + " pm");
+      $time.html((h - 12) + " : " + m + " pm.");
     } else {
       if (m <= 9) {
         m = "0" + m;
       }
-      $time.html((h + 1) + " : " + m + " am");
+      $time.html((h + 1) + " : " + m + " am.");
     }
     var t = setTimeout(startTime, 1000);
   }

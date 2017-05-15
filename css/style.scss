@@ -1,5 +1,6 @@
 $break-large: 960px;
 $break-medium: 640px;
+$break-small: 480px;
 
 html {
   padding: 0;
@@ -22,14 +23,14 @@ body {
     header {
       text-align: center;
       h1 {
-        font-size: 50px;
+        font-size: 125px;
         margin: 5px;
         padding: 5px;
         text-transform: uppercase;
         font-weight: bold;
       }
       h2 {
-        font-size: 32px;
+        font-size: 65px;
         margin: 5px;
         padding: 5px;
       }
@@ -81,6 +82,7 @@ footer {
   }
 }
 
+//Large breakpoint
 @media screen and (max-width: $break-large) {
   html {
     padding: 0;
@@ -103,14 +105,14 @@ footer {
       header {
         text-align: center;
         h1 {
-          font-size: 37.5px;
+          font-size: 93.75px;
           margin: 5px;
           padding: 5px;
           text-transform: uppercase;
           font-weight: bold;
         }
         h2 {
-          font-size: 24px;
+          font-size: 48.75px;
           margin: 5px;
           padding: 5px;
         }
@@ -163,6 +165,7 @@ footer {
   }
 }
 
+//Medium Breakpoint
 @media screen and (max-width: $break-medium) {
   html {
     padding: 0;
@@ -185,14 +188,14 @@ footer {
       header {
         text-align: center;
         h1 {
-          font-size: 50px;
+          font-size: 87px;
           margin: 5px;
           padding: 5px;
           text-transform: uppercase;
           font-weight: bold;
         }
         h2 {
-          font-size: 16px;
+          font-size: 32.5px;
           margin: 5px;
           padding: 5px;
         }
