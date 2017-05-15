@@ -5,25 +5,6 @@ $(document).ready(function(){
 var d = new Date();
 //Returns a int between 0-6 to Say what Day it is
 var day = d.getDay();
-
-
-// d.setUTCFullYear();
-// d.setUTCMonth();
-// d.setUTCDate();
-// d.setUTCHours();
-// d.setUTCMinutes();
-// d.setUTCSeconds();
-//
-// console.log(d);                        // -> Sat Feb 28 2004 23:45:26 GMT-0300 (BRT)
-// console.log(d.toLocaleString());       // -> Sat Feb 28 23:45:26 2004
-// console.log(d.toLocaleDateString());   // -> 02/28/2004
-// console.log(d.toLocaleTimeString());
-//
-// alert(time);
-//Switch statement that will log what day it is and then
-//change the background according to what day it is.
-
-// console.log(d.toLocaleTimeString());
 //############# jQuery DOM var ########
 
 var $body = $('body');
@@ -60,42 +41,25 @@ switch (day) {
 }
 //###############################
 
-//##################
-
-// function startTime(){
-//   let today = new Date();
-//   let h = today.getHours();
-//   let m = today.getMinutes();
-//   let s = today.getSeconds();
-//   m = checkTime(m);
-//   s = checkTime(s);
-//   console.log(h + " : " + m + " : " + s);
-//   var t = setTimeout(startTime, 500);
-// }
-
-//##################
-
-// function display_c(){
-// var refresh=1000; // Refresh rate in milli seconds
-// mytime=setTimeout('display_ct()',refresh)
-// }
-//
-// function display_ct() {
-// var strcount
-// var x = new Date()
-// $time.html(x);
-// tt=display_c();
-// }
-
-});
+//#########JS Clock that auto updates#########
 
 function startTime(){
-  let today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  // m = checkTime(m);
-  // s = checkTime(s);
-  $('.time').html(h + " : " + m + " : " + s);
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  if(h <= 12){
+  $('.time').html( h + " : " + m + " am");
+} else if( h > 12){
+  $('.time').html( (h - 12) + " : " + m + " pm");
+} else {
+  $('.time').html( (h + 1) + " : " + m + " am");
+}
   var t = setTimeout(startTime, 1000);
 }
+
+startTime();
+
+//########JS Clock that auto updates end##########
+
+});

@@ -28,7 +28,7 @@ $todayListArray = explode('<li>', $todayList[1]);
     <meta charset="utf-8">
     <title>Today in History</title>
   </head>
-  <body onload="startTime()">
+  <body>
     <main>
       <header>
         <h1>Today in History</h1>
