@@ -29,7 +29,7 @@ $todayListArray = explode('<li>', $todayList[1]);
     <title>Today in History</title>
   </head>
   <link rel="stylesheet" href="css/reset.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <body>
     <main>
       <header>

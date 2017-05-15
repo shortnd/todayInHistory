@@ -1,7 +1,14 @@
-main {
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  flex-direction: column;
+body {
+  font-family: 'Helvetica Neu', Helvetica, Arial, sans-serif;
+  main {
+    margin: 0 auto;
+    width: 90%;
+    height: 75%;
+  }
+}
+
+time {
+  font-size: 5em;
+  font-weight: bold;
+  display: block;
 }
