@@ -40,7 +40,7 @@ $todayListArray = explode('<li>', $todayList[1]);
       <section>
 
 
-        <p><?php
+        <h5><?php
         switch ($r) {
           case 1:
             echo strip_tags($todayListArray[1]);
@@ -59,22 +59,22 @@ $todayListArray = explode('<li>', $todayList[1]);
             echo strip_tags($todayLast[0]);
             break;
           default:
-            echo 'Code Broke Needs to be fixed!';
+            echo '<span class="error">Code Broke Needs to be fixed!</span>';
             break;
         }
       ?>
-      </p>
-        <time></time>
-        <h3>Find out more Info <a href="https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today" target="_blank">HERE</a> about the events that happened</h3>
+    </h5>
+    <time></time>
+        <!-- <h3>Find out more Info <a href="https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today" target="_blank">HERE</a> about the events that happened</h3> -->
       </section>
-
+      </main>
       <footer>
-
-        Created by Collin OConnell
+        <h3>Find out more Info <a href="https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today" target="_blank">HERE</a> about the events that happened</h3>
+        <h4>Created by Collin OConnell</h4>
 
       </footer>
-    </main>
+    <!-- </main> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

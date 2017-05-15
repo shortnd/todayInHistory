@@ -16,24 +16,32 @@ $(document).ready(function() {
   switch (day) {
     case 0:
       console.log('Today is Sunday');
+      $body.css('background-color', 'rgb(255, 120, 0)');
       break;
     case 1:
       console.log('Today is Monday');
+      $body.css('background-color', 'rgb(255, 255, 255)');
       break;
     case 2:
       console.log('Today is Tuesday');
+      $body.css('background-color', 'rgba(255, 0, 0, .75)');
       break;
     case 3:
       console.log('Today is Wensday!');
+      $body.css('background-color', 'rgba(0, 255, 0, .75)');
       break;
     case 4:
       console.log('Today is Thusday');
+      $body.css('background-color', 'rgba(255, 255, 0, .75)');
       break;
     case 5:
       console.log('Today is Friday');
+      $body.css('background-color', 'rgba(0, 0, 255, .65)');
       break;
     case 6:
       console.log('Today is Saturday');
+      $body.css('background-color', 'rgb(0, 0, 0)');
+      $body.css('color', '#ffffff');
       break;
     default:
       $body.css('background', 'yellow');
