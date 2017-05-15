@@ -28,6 +28,8 @@ $todayListArray = explode('<li>', $todayList[1]);
     <meta charset="utf-8">
     <title>Today in History</title>
   </head>
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <body>
     <main>
       <header>
@@ -60,10 +62,9 @@ $todayListArray = explode('<li>', $todayList[1]);
             echo 'Code Broke Needs to be fixed!';
             break;
         }
-      ?><p>
-        <div class="time">
-
-        </div>
+      ?>
+      </p>
+        <time></time>
         <h3>Find out more Info <a href="https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today" target="_blank">HERE</a> about the events that happened</h3>
       </section>
 

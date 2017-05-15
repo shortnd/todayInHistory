@@ -9,7 +9,7 @@ var day = d.getDay();
 
 var $body = $('body');
 
-var $time = $('.time');
+var $time = $('time');
 
 //############# jQuery DOM var END ####
 // ##########################
@@ -49,11 +49,11 @@ function startTime(){
   var m = today.getMinutes();
   var s = today.getSeconds();
   if(h <= 12){
-  $('.time').html( h + " : " + m + " am");
+  $time.html( h + " : " + m + " am");
 } else if( h > 12){
-  $('.time').html( (h - 12) + " : " + m + " pm");
+  $time.html( (h - 12) + " : " + m + " pm");
 } else {
-  $('.time').html( (h + 1) + " : " + m + " am");
+  $time.html( (h + 1) + " : " + m + " am");
 }
   var t = setTimeout(startTime, 1000);
 }
