@@ -41,22 +41,10 @@ $todayListArray = explode('<li>', $todayList[1]);
 
 
         <h5><?php
+
         switch ($r) {
-          case 1:
-            echo strip_tags($todayListArray[1]);
-            break;
-          case 2:
-            echo strip_tags($todayListArray[2]);
-            break;
-          case 3:
-            echo strip_tags($todayListArray[3]);
-            break;
-          case 4:
-            echo strip_tags($todayListArray[4]);
-            break;
-          case 5:
-            $todayLast = explode('<p><b><a href', $todayListArray[5]);
-            echo strip_tags($todayLast[0]);
+          case $r:
+            echo strip_tags($todayListArray[$r]);
             break;
           default:
             echo '<span class="error">Code Broke Needs to be fixed!</span>';
