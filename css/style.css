@@ -20,13 +20,13 @@ body {
       text-align: center;
       border-bottom: 10px #000000 solid; }
       body main header h1 {
-        font-size: 75px;
+        font-size: 50px;
         margin: 5px;
         padding: 5px;
         text-transform: uppercase;
         font-weight: bold; }
       body main header h2 {
-        font-size: 2em;
+        font-size: 32px;
         margin: 5px;
         padding: 5px; }
     body main section {
@@ -47,7 +47,7 @@ body {
         font-weight: bold;
         display: block; }
       body main section h5 {
-        font-size: 3em; }
+        font-size: 48px; }
 
 footer {
   border-top: 2px solid #000000;
@@ -63,5 +63,138 @@ footer {
     padding: 5px; }
   footer h4 {
     padding: 5px; }
+
+@media screen and (max-width: 960px) {
+  html {
+    padding: 0;
+    margin: 0; }
+
+  body {
+    font-family: 'Helvetica Neu', Helvetica, Arial, sans-serif;
+    background-color: #fff6c9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    body main {
+      margin: 0 auto;
+      width: 90%;
+      height: 95vh;
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      flex-direction: column; }
+      body main header {
+        text-align: center;
+        border-bottom: 10px #000000 solid; }
+        body main header h1 {
+          font-size: 37.5px;
+          margin: 5px;
+          padding: 5px;
+          text-transform: uppercase;
+          font-weight: bold; }
+        body main header h2 {
+          font-size: 24px;
+          margin: 5px;
+          padding: 5px; }
+      body main section {
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column; }
+        body main section .error {
+          color: #e02a2a;
+          font-size: 10em; }
+        body main section time {
+          text-align: center;
+          font-size: 131px;
+          font-weight: bold;
+          display: block; }
+        body main section h5 {
+          font-size: 36px; }
+
+  footer {
+    border-top: 2px solid #000000;
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff !important; }
+    footer a {
+      color: #ffffff !important; }
+      footer a:hover {
+        color: #fdff8c !important; }
+    footer h3 {
+      padding: 5px; }
+    footer h4 {
+      padding: 5px; } }
+@media screen and (max-width: 640px) {
+  html {
+    padding: 0;
+    margin: 0; }
+
+  body {
+    font-family: 'Helvetica Neu', Helvetica, Arial, sans-serif;
+    background-color: #fff6c9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    body main {
+      margin: 0 auto;
+      width: 90%;
+      height: 95vh;
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      flex-direction: column; }
+      body main header {
+        text-align: center;
+        border-bottom: 10px #000000 solid; }
+        body main header h1 {
+          font-size: 50px;
+          margin: 5px;
+          padding: 5px;
+          text-transform: uppercase;
+          font-weight: bold; }
+        body main header h2 {
+          font-size: 16px;
+          margin: 5px;
+          padding: 5px; }
+      body main section {
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column; }
+        body main section .error {
+          color: #e02a2a;
+          font-size: 10em; }
+        body main section time {
+          text-align: center;
+          font-size: 87px;
+          font-weight: bold;
+          display: block; }
+        body main section h5 {
+          font-size: 24px; }
+
+  footer {
+    border-top: 2px solid #000000;
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff !important; }
+    footer a {
+      color: #ffffff !important; }
+      footer a:hover {
+        color: #fdff8c !important; }
+    footer h3 {
+      padding: 5px; }
+    footer h4 {
+      padding: 5px; } }
 
 /*# sourceMappingURL=style.css.map */

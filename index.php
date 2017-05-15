@@ -70,7 +70,7 @@ $todayListArray = explode('<li>', $todayList[1]);
       </main>
       <footer>
         <h3>Find out more Info <a href="https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today" target="_blank">HERE</a> about the events that happened</h3>
-        <h4>Created by Collin OConnell</h4>
+        <h4>Created by Collin OConnell - <a href="http://shortnd.design" target="_blank">shortnd.design</a></h4>
 
       </footer>
     <!-- </main> -->
