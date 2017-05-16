@@ -7,11 +7,12 @@ body {
   background-color: #fff6c9;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 100vh; }
   body main {
     margin: 0 auto;
     width: 90%;
-    height: 95vh;
+    height: 95%;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
